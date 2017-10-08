@@ -185,25 +185,6 @@ dtoverlay=w1-gpio,gpiopin=4,pullup=on
 
 ```
 
-NOW check your kernel version:
-```
-uname -r
-```
-
-#### Kernel-Version < 3.18.3
-If you are using an older kernel version, load the modules via
-
-```
-sudo modprobe w1-gpio pullup=1 && sudo modprobe w1_therm
-
-```
-... and add to the modules, so we dont have to load them manually after every boot
-
-```
-sudo echo >> /etc/modules w1-gpio && sudo echo >> /etc/modules w1_therm
-
-```
-
 
 ## Running
 
