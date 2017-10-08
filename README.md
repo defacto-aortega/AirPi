@@ -184,7 +184,7 @@ dtoverlay=w1-gpio,gpiopin=4,pullup=on
 
 ```
 
-Thx to Enrico, a german tech blogger:
+Thx to Enrico, a German tech blogger:
 http://fluuux.de/2016/04/raspberry-pi-ds1820-temperatursensoren-auslesen/
 
 
