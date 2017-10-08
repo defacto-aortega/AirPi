@@ -1,3 +1,8 @@
+Latest Version
+========
+- DS18S20 temperature support added (see configuration below)
+
+
 AirPi
 ========
 
@@ -144,6 +149,42 @@ FeedID=xxxxxxxxxx
 ```
 
 If you have registered with https://xively.com - you can add your API Key and Feed ID here.
+
+## Configuration
+
+### DS18S20
+
+
+In the sensors.cfg set the pinNumber for the temperature sensor.
+
+```
+
+[DS18S20]
+filename=ds18s20
+enabled=on
+pinNumber=4
+sensorName=DS18S20
+
+```
+
+#### Kernel-Version >= 3.18.3
+Open the /boot/config.txt
+
+```
+sudo vim /boot/config.txt
+
+```
+
+and append the following
+
+```
+dtoverlay=w1-gpio,gpiopin=4,pullup=on
+
+```
+
+
+
+
 
 ## Running
 
