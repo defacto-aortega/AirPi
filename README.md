@@ -1,6 +1,7 @@
 Latest Version
 ========
 - DS18S20 temperature support added (see configuration below)
+- Code refactored
 
 
 AirPi
@@ -177,14 +178,14 @@ sudo vim /boot/config.txt
 
 and append the following
 
-(Notice: gpiopin is your pin number, same as in the configuration file!)
+Notice: gpiopin is your pin number, same as in the configuration file!
 
 ```
 dtoverlay=w1-gpio,gpiopin=4,pullup=on
 
 ```
 
-NOW check the your kernel version:
+NOW check your kernel version:
 ```
 uname -r
 ```
