@@ -1,6 +1,6 @@
 Latest Version
 ========
-- DS18S20 temperature support added (see configuration below)
+- DS18S20 temperature support added (see sensor configuration below)
 - Code refactored
 
 
@@ -151,10 +151,9 @@ FeedID=xxxxxxxxxx
 
 If you have registered with https://xively.com - you can add your API Key and Feed ID here.
 
-## Configuration
+## Sensor Configuration
 
 ### DS18S20
-
 
 In the sensors.cfg set the pinNumber for the temperature sensor.
 
@@ -184,6 +183,9 @@ Notice: gpiopin is your pin number, same as in the configuration file!
 dtoverlay=w1-gpio,gpiopin=4,pullup=on
 
 ```
+
+Thx to Enrico, a german tech blogger:
+http://fluuux.de/2016/04/raspberry-pi-ds1820-temperatursensoren-auslesen/
 
 
 ## Running
