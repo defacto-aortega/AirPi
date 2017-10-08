@@ -1,6 +1,9 @@
-class Output():
-	def __init__(self,data):
-		raise NotImplementedError
-	
-	def outputData(self,dataPoints):
-		raise NotImplementedError
+class Output:
+    requiredOptions = []
+    optionalOptions = []
+
+    def __init__(self, data):
+        raise NotImplementedError
+
+    def output_data(self, data_points):
+        raise NotImplementedError

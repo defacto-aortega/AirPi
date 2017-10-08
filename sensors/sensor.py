@@ -1,6 +1,11 @@
-class Sensor():
-	def __init__(data):
-		raise NotImplementedError
-	
-	def getData():
-		raise NotImplementedError
+
+
+class Sensor:
+    requiredOptions = []
+    optionalOptions = []
+
+    def __init__(self,data):
+        raise NotImplementedError
+
+    def get_data(self):
+        raise NotImplementedError
