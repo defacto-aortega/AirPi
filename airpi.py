@@ -105,7 +105,8 @@ class AirPi:
 
             except exceptions.AirPiException as ae:
                 raise ae
-            except Exception:
+            except Exception as e:
+                print e
                 raise exceptions.AirPiException("Did not import "+module_dir+" plugin: " + section)
 
         return inst_array

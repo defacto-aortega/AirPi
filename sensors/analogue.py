@@ -36,15 +36,6 @@ class Analogue(sensor.Sensor):
         # Get result from adc
         result = self.adc.readADC(self.adcPin)
 
-        print self.adc.readADC(0)
-        print self.adc.readADC(1)
-        print self.adc.readADC(2)
-        print self.adc.readADC(3)
-        print self.adc.readADC(4)
-        print self.adc.readADC(5)
-        print self.adc.readADC(6)
-        print self.adc.readADC(7)
-
         if result == 0:
             print "Check wiring for the " + self.sensorName + " measurement, no voltage detected on ADC input " + str(self.adcPin)
             return None

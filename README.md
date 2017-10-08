@@ -1,5 +1,8 @@
-Latest Version
+Latest Version 8.10.2017
 ========
+
+- GroveStream output added, since Xively is not open source neither free
+
 - DS18S20 temperature support added (see sensor configuration below)
 - Code refactored
 

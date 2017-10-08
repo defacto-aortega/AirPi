@@ -47,5 +47,5 @@ class DHT22(sensor.Sensor):
         elif self.valName == "Relative_Humidity":
             return h
 
-	def getdata(self):
-		pass
+    def getdata(self):
+        pass
