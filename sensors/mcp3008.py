@@ -17,13 +17,13 @@ class MCP3008(sensor.Sensor):
         self.SPICS = 25
 
         if "mosiPin" in data:
-            self.SPIMOSI = data["mosiPin"]
+            self.SPIMOSI = int(data["mosiPin"])
         if "misoPin" in data:
-            self.SPIMISO = data["misoPin"]
+            self.SPIMISO = int(data["misoPin"])
         if "clkPin" in data:
-            self.SPICLK = data["clkPin"]
+            self.SPICLK = int(data["clkPin"])
         if "csPin" in data:
-            self.SPICS = data["csPin"]
+            self.SPICS = int(data["csPin"])
 
         GPIO.setmode(GPIO.BCM)
         GPIO.setwarnings(False)
